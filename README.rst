@@ -17,6 +17,14 @@ Keyworded arguments accepts:
  - string - to indicate value of flag
  - list of string - to indicate repetition of given flag with multiple values
 
+Install
+-------
+
+.. code:: bash
+
+    python setup.py sdist
+    pip install dist/pysh-0.1dev-r0.tar.gz
+
 Usage
 -----
 
@@ -31,6 +39,7 @@ Running simple command
 
 .. code:: python
 
+    from pysh import pysh
     pysh.echo(n=True, "Print no new line")
 
 Running command with short and long flags
@@ -123,7 +132,7 @@ Instead of using default pysh object:
 
     from pysh import pysh
 
-user code can created on configured PySh object:
+usercode can create a configured PySh object:
 
 .. code:: python
 
